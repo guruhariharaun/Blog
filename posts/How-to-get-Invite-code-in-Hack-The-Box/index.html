@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>How to get Invite code in Hack The Box | Blog of Guru HariHaraun</title>
+
+<!-- Manual Search Engine Optimization Starts -->
+
+<meta name="keywords" content="hackthebox, Ethical Hacking, Read Team, HTB, Invite code"/>
+
+<meta name="robots" content="index, follow">
+<meta name="title" property="og:title" content="How to get Invite code in Hack The Box" />
+<meta property="og:url" content="/posts/How-to-get-Invite-code-in-Hack-The-Box/" />
+<link rel="canonical" href="https://blog.thegurusec.com" />
+<meta name="image" property="og:image" content="https://ik.imagekit.io/guruhariharaun/blog/posts/How_to_get_Invite_code_in_Hack_The_Box/assets/images/AakBtIX693EynAqA48G6thsGkDJUwCacrEfbhwP84BYUpVurQ8.png"/>
+<meta name="author" content="Guru HariHaraun" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article">
+<meta name="description" property="og:description" content="In this article you would learn how to solve the Hack The Box sign-up challenge." />
+<meta property="og:site_name" content="Blog of Guru HariHaraun" />
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="blog.thegurusec.com">
+<meta property="twitter:url" content="/posts/How-to-get-Invite-code-in-Hack-The-Box/">
+<meta name="twitter:title" content="How to get Invite code in Hack The Box">
+<meta name="twitter:description" content="In this article you would learn how to solve the Hack The Box sign-up challenge.">
+<meta name="twitter:image" content="https://ik.imagekit.io/guruhariharaun/blog/posts/How_to_get_Invite_code_in_Hack_The_Box/assets/images/AakBtIX693EynAqA48G6thsGkDJUwCacrEfbhwP84BYUpVurQ8.png">
+
+<!-- Website Logo Links -->
+<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+<link rel="icon prefetch" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+<link rel="icon prefetch" type="image/png" sizes="192x192" href="/assets/images/favicon/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="a/assets/images/favicon/android-chrome-512x512.png">
+<link rel="mask-icon" href="/assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="/assets/images/logo.ico">
+<!-- CDN and Assets Link -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link href="/assets/css/screen.css" rel="stylesheet">
+<link href="/assets/css/main.css" rel="stylesheet">
+<script src="/assets/js/jquery.min.js"></script>
+</head>
+
+
+<body class="layout-post">
+	<!-- defer loading of font and font awesome -->
+	<noscript id="deferred-styles">
+		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	</noscript>
+
+<!-- Begin Menu Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+    <div class="container pr-0">
+    <!-- Begin Logo -->
+    <a class="navbar-brand" href="/">
+    <img src="/assets/images/logo.png" alt="Blog of Guru HariHaraun">
+    </a>
+    <!-- End Logo -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMediumish">
+        <!-- Begin Menu -->
+            <ul class="navbar-nav ml-auto">
+
+                
+                <li class="nav-item">
+                
+                <a class="nav-link" href="/index.html">Blog</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="/categories.html">Categories</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://thegurusec.com">About</a>
+                </li>
+                <script src="/assets/js/lunr.js"></script>
+
+
+<style>
+    .lunrsearchresult .title {color: #d9230f;}
+    .lunrsearchresult .url {color: silver;}
+    .lunrsearchresult a {display: block; color: #777;}
+    .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
+    .lunrsearchresult a:hover .title {text-decoration: underline;}
+</style>
+
+
+<form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+</form>
+
+<div id="lunrsearchresults">
+    
+    <ul></ul>
+</div>
+
+<script src="/assets/js/lunrsearchengine.js"></script>
+
+            </ul>
+
+        <!-- End Menu -->
+
+    </div>
+
+    </div>
+</nav>
+<!-- End Navigation -->
+
+<div class="site-content">
+
+<div class="container">
+
+<!-- Site Title -->
+<div class="mainheading">
+    <h1 class="sitetitle">Blog of Guru HariHaraun</h1>
+    <p class="lead">
+        Welcome to my space! This is my personal blog where I post content on topics related to Information Security, Ethical Hacking, Penetration Testing (Red Team), DevOps Culture, Cloud, Programming, Computer tricks, Tech news, and many more!
+    </p>
+</div>
+
+<!-- Content -->
+<div class="main-content">
+    <!-- Begin Article -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Share -->
+        <div class="col-md-2 pl-0">
+            <div class="share sticky-top sticky-top-offset">
+    <p>
+        Share
+    </p>
+    <ul>
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=How to get Invite code in Hack The Box&url=https://blog.thegurusec.com/posts/How-to-get-Invite-code-in-Hack-The-Box/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://facebook.com/sharer.php?u=https://blog.thegurusec.com/posts/How-to-get-Invite-code-in-Hack-The-Box/" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=https://blog.thegurusec.com/posts/How-to-get-Invite-code-in-Hack-The-Box/" onclick="window.open(this.href, 'width=550,height=435');return false;">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </li>
+
+    </ul>
+     
+    <div class="sep">
+    </div>
+    <ul>
+        <li>
+        <a class="small smoothscroll" href="#disqus_thread">Post a comment</a>
+        </li>
+    </ul>
+
+
+    
+    
+</div>
+
+        </div>
+
+        <!-- Post -->
+        
+
+        <div class="col-md-9 flex-first flex-md-unordered">
+            <div class="mainheading">
+
+                <!-- Author Box -->
+                
+                <div class="row post-top-meta">
+                    <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-right mb-4 mb-md-0">
+                        
+                        <img class="author-thumb" src="/assets/images/avatar/guruhariharaun.jpeg" alt="Guru HariHaraun">
+                        
+                    </div>
+                    <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
+                        <h3><a target="_blank" class="link-dark" href="https://blog.thegurusec.com">Guru HariHaraun</a><a target="_blank" href="https://www.linkedin.com/in/guru-hariharaun" class="btn follow">Follow</a></h3>
+                        <span class="author-description">Admin of this Blog</span><br>                     
+                        <span class="author-description">17 Jan 2022</span>
+
+                        
+                    </div>
+                </div>
+                
+
+                <!-- Post Title -->
+                <h1 class="posttitle">How to get Invite code in Hack The Box</h1>
+
+            </div>
+
+            <!-- Post Featured Image -->
+            
+            
+            <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="https://ik.imagekit.io/guruhariharaun/blog/posts/How_to_get_Invite_code_in_Hack_The_Box/assets/images/AakBtIX693EynAqA48G6thsGkDJUwCacrEfbhwP84BYUpVurQ8.png" alt="How to get Invite code in Hack The Box">
+            
+
+            
+            <!-- End Featured Image -->
+
+            <!-- Post Content -->
+            <div class="article-post">
+                <!-- Toc if any -->
+                
+                <!-- End Toc -->
+                <blockquote>
+  <p><strong>Note:</strong> This blog is also posted on <a href="https://medium.com/@thegurusec/how-to-get-invite-code-in-hack-the-box-a61e4cc4661f" title="https://medium.com/@thegurusec/how-to-get-invite-code-in-hack-the-box-a61e4cc4661f">https://medium.com/</a></p>
+</blockquote>
+
+<p>Before you read this blog, please visit <b><a href="https://hackthebox.eu" title="https://hackthebox.eu">https://hackthebox.eu</a></b> and try to signup by yourself. If you face any issues or are pissed off then, read this blog.</p>
+
+<blockquote>
+  <p><strong>DISCLAIMER:</strong> In Hack The Box, there are two types of invite challenges. Here, I covered one of them. If you encountered with another type then you can search it on google or close the applications and redo the process again.</p>
+</blockquote>
+
+<h3 id="what-is-hack-the-box">What is Hack The Box?</h3>
+
+<p>Hackthebox is an <b>online penetration testing platform</b> which use to test your skills in cybersecurity. It has numbers of Vulnerable Virtual machines, where you perform the pen-testing on the Vulnerable Virtual machine and capture User and Root Flags. Based on your points, the ranking would be provided and you would get badges.</p>
+
+<h5 id="the-badge-might-look-like-this">The badge might look like this:</h5>
+<p><a href="img src=&quot;http://www.hackthebox.eu/badge/image/259916&quot; alt=&quot;Hack The Box&quot;"><img src="http://www.hackthebox.eu/badge/image/259916" alt="Hack The Box" /></a></p>
+
+<p>Many cybersecurity enthusiasts, beginners might have come across through <a href="https://hackthebox.eu" title="https://hackthebox.eu">https://hackthebox.eu</a>. Also, they would have tried to create an account. But the catch here is you cannot easily register into your account.  Since this is a Capture The Flag style platform, you have to change your mindset and think accordingly.</p>
+
+<h3 id="so-come-and-start-to-hack-the-box-with-me-">So come and start to Hack the Box with me 😄</h3>
+
+<ul>
+  <li>Firstly, go to the <a href="https://hackthebox.eu" title="https://hackthebox.eu">https://hackthebox.eu</a> and click on the <b><code class="language-plaintext highlighter-rouge">Join Now</code></b> button.</li>
+  <li>
+    <p>You will be redirected to <a href="https://hackthebox.eu/invite" title="https://hackthebox.eu/invite">https://hackthebox.eu/invite</a>
+<img src="https://ik.imagekit.io/guruhariharaun/blog/posts/How_to_get_Invite_code_in_Hack_The_Box/assets/images/dBJKRM5i8ysCdWxWH0qB8wwUDcwI3AGz54XGm1Pi63NOjQJMa5.png" /></p>
+  </li>
+  <li>Now you have to crawl through the web page and search for any clue.</li>
+</ul>
+
+<blockquote>
+  <p>FYI: The favourite page for web application pentesters is the page source URL end-point and Inspector tab! 😉</p>
+</blockquote>
+
+<ul>
+  <li><b>Right-click</b> on the page and open inspect element. As a shortcut by pressing <br /><code class="language-plaintext highlighter-rouge">ctrl + shift + C</code>.(Be as Geek! ) and go to the console tab.</li>
+  <li>A cyberpunk styled Skull would have populated on your console Tab.</li>
+  <li>On the console, you may find <b>This page loads an interesting javascript file.</b>. See if you can find it :)”.</li>
+  <li>So now go to the <b>sources Tab</b> and inspect every file in the <code class="language-plaintext highlighter-rouge">javascript</code> folder.</li>
+  <li>You would find a suspicious file named <b><code class="language-plaintext highlighter-rouge">inviteapi.min.js</code></b> in which you could see some <b>obfuscated javascript code</b>.
+<img src="https://ik.imagekit.io/guruhariharaun/blog/posts/How_to_get_Invite_code_in_Hack_The_Box/assets/images/G6L5bVwUM83Wl4OMTpm8pqL90EaabfTIpHTHdedpIySoSC8Naq.png " /></li>
+</ul>
+
+<h3 id="what-is-obfuscation">What is Obfuscation?</h3>
+<blockquote>
+  <p>The conversion of normal readable source code into an unreadable code called as <b>obfuscation</b>. It is something similar to encryption, but the beauty is the machine could able to read and execute.</p>
+</blockquote>
+
+<ul>
+  <li>To decode the obfuscated code in online there is numerous decoder available. But for now, I’m using an open-source application <a href="https://lelinhtinh.github.io/de4js" title="https://lelinhtinh.github.io/de4js">https://lelinhtinh.github.io/de4js</a></li>
+  <li>
+    <p>When I run the obfuscated javascript on the tool it might decode and output the code like this:
+<img src="https://ik.imagekit.io/guruhariharaun/blog/posts/How_to_get_Invite_code_in_Hack_The_Box/assets/images/HloaxqPngpJTUs7WceW5gK5RIk7YokqfPy3GtzwIDVqIRc4Y46.png " />
+<img src="https://ik.imagekit.io/guruhariharaun/blog/posts/How_to_get_Invite_code_in_Hack_The_Box/assets/images/nxIhMDzdn4etthd1Su2MzkzM6v1MmkEurRRDJYQDJ9i2iufX0r.png " /></p>
+  </li>
+  <li>Looking closely you can predict or you may get some idea on the last few lines
+<img src="https://ik.imagekit.io/guruhariharaun/blog/posts/How_to_get_Invite_code_in_Hack_The_Box/assets/images/mziouxIhMDzdn4etthd1Su2MzkzM6v1MmkEurRRDJYQDJ9i2iufX0r.jpg" /></li>
+  <li>
+    <p>We have concluded that the code hinted us to make a function call <code class="language-plaintext highlighter-rouge">makeInviteCode()</code>, which give us <b>JSON data.</b> So let’s try it out on our invite page.
+<img src="https://ik.imagekit.io/guruhariharaun/blog/posts/How_to_get_Invite_code_in_Hack_The_Box/assets/images/twN44Hqlri3ENv7Zi73QUvokHGj59O4qP08eGHRYapO2mu1Vwc.png" />
+<img src="https://ik.imagekit.io/guruhariharaun/blog/posts/How_to_get_Invite_code_in_Hack_The_Box/assets/images/twN44Hqlri3ENv7Zi73QUvokHGj59O4qP08eGHRYapO2mu1Vwc.png" /></p>
+  </li>
+  <li>Now here we could see that the server sent us an encrypted data on <b>ROT13 cipher.</b></li>
+</ul>
+
+<h3 id="what-is-rot13">What is ROT13?</h3>
+<p><b>ROT13 cipher</b>(read as – “rotate by 13 places”) is a special case of the Ceaser cipher in which the shift is always 13. So every letter is <b>shifted 13 places</b> to encrypt or to decrypt the message.</p>
+
+<ul>
+  <li>Using an online tool, we can decrypt the ROT13 data. For the demonstration, I going to use <a href="https://rot13.com" title="https://rot13.com">https://rot13.com</a>.</li>
+  <li>By processing the Encrypted data, you would get a sentence like this:<br /> <code class="language-plaintext highlighter-rouge">to generate the invite code, make a POST request to /api/invite/generate</code></li>
+  <li>Using the curl send a <b>POST</b> request to the Hack The Box’s Invite URL End-point appending the above path.</li>
+  <li>By now you would’ve got a response as in <b>JSON format.</b></li>
+</ul>
+<image src="https://ik.imagekit.io/guruhariharaun/blog/posts/How_to_get_Invite_code_in_Hack_The_Box/assets/images/ViCIf8ApVW1jFr2nMoYlLMdItSkKD6SDzDh1hLjtkVSGKiHfUM.png" />
+
+<h3 id="what-is-a-curl">What is a curl?</h3>
+<p>A curl is a command-line tool use to transfer data without the browser. We can perform any request, response headers on the command line itself, which would be very useful for developers. Also, this is a lightweight tool.</p>
+
+<ul>
+  <li>In the payload, there would be an <b>encrypted string.</b> But they haven’t mentioned the cipher or any encryption standard.</li>
+</ul>
+
+<h4 id="hummmmm">hummmmm……..</h4>
+
+<p>Could you able to find it? Ok, let me give you a clue.</p>
+
+<p>They mainly used for <b>encoding binary data</b> for embedding into <code class="language-plaintext highlighter-rouge">HTML</code>, <code class="language-plaintext highlighter-rouge">CSS</code>, <code class="language-plaintext highlighter-rouge">EML</code>, and other text documents. Also, It used to encode data that may be unsupported or damaged during transfer, storage, or output.</p>
+
+<h6 id="what-was-that-click-here-to-reveal-the-answer">What was that? Click here to reveal the answer!</h6>
+<h4><span class="spoiler"><b>BASE64 Encoding</b> </span></h4>
+
+<blockquote>
+  <p>This one might come only on practice and experience, so keep moving up!</p>
+</blockquote>
+
+<ul>
+  <li>To decrypt the Base64 data, I going to use an online tool <a href="https://base64decode.org" title="https://base64decode.org">https://base64decode.org</a>.</li>
+  <li>By decoding the data, you will get the <b>25 characters Invite Code.</b></li>
+</ul>
+<image src="https://ik.imagekit.io/guruhariharaun/blog/posts/How_to_get_Invite_code_in_Hack_The_Box/assets/images/vSA3eXmwznu4yyfCk49xbDV3ZCweJbAfWgsn5IHjFwli6RJXFX.png" />
+
+<p>Click on to reveal my Invite Code:
+<span class="spoiler"><b>WWXYD-JPILG-GCVTP-UPAWN-IHWJA<br />Don’t worry! you can’t use this invite code 😂. Try it on your own bro!</b></span></p>
+
+<ul>
+  <li>
+    <p>Now <b>Paste</b> the Invite code which you’ve got on the box and press Sign Up.
+<img src="https://ik.imagekit.io/guruhariharaun/blog/posts/How_to_get_Invite_code_in_Hack_The_Box/assets/images/xvymmVBfZYe1elD3xp5x9ipp0qGGp4iBzBX2ETbfeuy0LE1RB0.png" /></p>
+  </li>
+  <li>
+    <p><b>YAAY!🙌</b> You have solved the <b>Hack The Box Invite Code Challenge 🔥.</b> You can now sign up on the site and become a member.
+<img src="https://ik.imagekit.io/guruhariharaun/blog/posts/How_to_get_Invite_code_in_Hack_The_Box/assets/images/xxttAYghF0EsYQSN9T1c8MoJ3nZXx9Waxv3oQ0wTJ37Ljx0r1yP.png" /></p>
+  </li>
+</ul>
+
+<!-- #### Still, you need spoon-feeding?
+Here is the video:
+<p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe> -->
+<p>I hope this post would be much Informative. If you like 👍 this post or If your friend who is interested in Cybersecurity💻, please share this.</p>
+
+
+            </div>
+
+            <!-- Rating -->
+            
+            <div class="rating mb-4 d-flex align-items-center">
+                <strong class="mr-1">Rating:</strong> <div class="rating-holder">
+<div class="c-rating c-rating--regular" data-rating-value="4.5">
+  <button>1</button>
+  <button>2</button>
+  <button>3</button>
+  <button>4</button>
+  <button>5</button>
+</div>
+</div>
+            </div>
+            
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="2022-01-17">17 Jan 2022</time></span>           
+                
+                </small>
+            </p>
+
+            <!-- Post Categories -->
+            <div class="after-post-cats">
+                <ul class="tags mb-4">
+                    
+                    
+                    <li>
+                        <a class="smoothscroll" href="categories#cybersecurity">cybersecurity</a>
+                    </li>
+                    
+                    <li>
+                        <a class="smoothscroll" href="categories#hackthebox">hackthebox</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- End Categories -->
+
+            <!-- Post Tags -->
+            <div class="after-post-tags">
+                <ul class="tags">
+                    
+                    
+                </ul>
+            </div>
+            <!-- End Tags -->
+
+            <!-- Prev/Next -->
+            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+            
+            
+            <div class="clearfix"></div>
+            </div>
+            <!-- End Categories -->
+
+        </div>
+        <!-- End Post -->
+
+    </div>
+</div>
+<!-- End Article -->
+
+<!-- Begin Comments -->
+
+    <div class="container">
+        <div id="comments" class="row justify-content-center mb-5">
+            <div class="col-md-8">
+                <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'guruhariharaun-blog'; 
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+            </div>
+        </div>
+    </div>
+
+<!-- End Comments -->
+
+
+
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org/",
+        "@type": "BlogPosting",
+        "author":
+        {
+          "@type": "Person",
+          "name": "Guru HariHaraun"
+        },
+        "publisher":
+        {
+          "@type": "Organization",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "/assets/images/logo.png"
+          },
+        "name": "Guru HariHaraun"
+        
+        "url": "https://blog.thegurusec.com/posts/How-to-get-Invite-code-in-Hack-The-Box/",
+        “image”: {
+            “@type”: “ImageObject”,
+            “url”: “https://ik.imagekit.io/guruhariharaun/blog/posts/How_to_get_Invite_code_in_Hack_The_Box/assets/images/AakBtIX693EynAqA48G6thsGkDJUwCacrEfbhwP84BYUpVurQ8.png”,
+            “height”: 463,
+            “width”: 700
+            },
+        "headline": "How to get Invite code in Hack The Box",
+        "datePublished": "2022-01-17",
+        "description": "In this article you would learn how to solve the Hack The Box sign-up challenge.",
+      
+        
+        "reviewRating":
+        {
+          "@type": "Rating",
+          "ratingValue": "4.5",
+          "bestRating": "5"
+        }
+      }
+
+</script>
+
+</div>
+
+
+<!-- Bottom Alert Bar -->
+<div class="alertbar">
+	<div class="container text-center">
+		<span><img src="/assets/images/logo.png"  width="30px" height="30px" alt="Blog of Guru HariHaraun"> &nbsp; Never miss any <b>story</b> from me, subscribe for my newsletter</span>
+        <iframe name="hidframe" style="display:none;"></iframe>
+        <form action="https://guruhariharaun.us7.list-manage.com/subscribe/post?u=dc52445186760eeff7076f829&amp;id=9e3ebcdea7" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate" target="hidframe" onsubmit="launch_toast()" novalidate>
+            <div class="mc-field-group">
+                <input type="email" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL" autocomplete="on" required>
+                <input type="submit" value="Subscribe" name="subscribe" class="heart">
+                <input type="hidden" name="ad_id" value="2">            
+            </div>
+        </form>
+	</div>
+</div>
+<div id="toast"><div id="img"><img src= "/assets/images/logo.png" width="30px" height="30px" /></div><div id="desc">Thanks for subscribing my newsletter!</div></div>
+
+    
+</div>
+
+<!-- Categories Jumbotron -->
+<div class="jumbotron fortags">
+	<div class="d-md-flex h-100">
+		<div class="col-md-4 transpdark align-self-center text-center h-100">
+            <div class="d-md-flex align-items-center justify-content-center h-100">
+                <h2 class="d-md-block align-self-center py-1 font-weight-light">Keywords <span class="d-none d-md-inline">→</span></h2>
+            </div>
+		</div>
+		<div class="col-md-8 p-5 align-self-center text-center">
+            
+            
+                
+                    <a class="mt-1 mb-1" href="/category/hackthebox">hackthebox </a>
+                
+                    <a class="mt-1 mb-1" href="/category/cybersecurity">cybersecurity </a>
+                
+            
+            
+		</div>
+	</div>
+</div>
+
+<!-- Begin Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-6 text-center ">
+                Copyright © 2022 Blog of Guru HariHaraun 
+            </div>
+            <div class="col-md-12 col-sm-6 text-center ">   
+                <p style="text-align: center;">Made with <span style="color: var(--danger);">❤&nbsp;</span>by <a target="_blank" href="https://thegurusec.com">Guru HariHaraun</a></p>
+ 
+                
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
+
+</div> <!-- /.site-content -->
+
+<!-- Scripts -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<script src="/assets/js/mediumish.js"></script>
+<script src="/assets/js/toast.js"></script>
+
+
+<script src="/assets/js/lazyload.js"></script>
+
+
+<script src="/assets/js/ie10-viewport-bug-workaround.js"></script> 
+
+
+<script id="dsq-count-scr" src="//guruhariharaun-blog.disqus.com/count.js"></script>
+<script id="dsq-count-scr" src="//guruhariharaun-blog.disqus.com/count.js" async></script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'G-1Y6MST8ZWQ', 'auto');
+    ga('send', 'pageview');
+    </script>
+</body>
+</html>
