@@ -1,0 +1,4 @@
+# robots.txt for https://blog.thegurusec.com
+
+User-agent: *
+Sitemap: https://blog.thegurusec.com/sitemap.xml
